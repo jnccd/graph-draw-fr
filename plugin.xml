@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.elk.core.layoutProviders">
+      <provider
+            class="frLayouting2.FrLayouting2MetadataProvider">
+      </provider>
+   </extension>
+
+</plugin>
