@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: frLayouting2
+Bundle-SymbolicName: frLayouting2;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.elk.core,
+ org.eclipse.elk.graph,
+ org.eclipse.elk.alg.common,
+ com.google.guava
+Automatic-Module-Name: frLayouting2
+Bundle-RequiredExecutionEnvironment: JavaSE-10

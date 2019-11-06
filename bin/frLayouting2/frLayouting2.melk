@@ -1,0 +1,37 @@
+package frLayouting2
+
+import frLayouting2.FrLayouting2LayoutProvider
+import org.eclipse.elk.core.math.ElkPadding
+
+bundle {
+    metadataClass FrLayouting2MetadataProvider
+    idPrefix frLayouting2
+}
+
+option reverseInput : boolean {
+    label "Reverse Input"
+    description
+        "True if nodes should be placed in reverse order of their
+        appearance in the graph."
+    default = false
+    targets parents
+}
+
+option iterations : int {
+    label "Iterations"
+    description
+        "How many iterations should the alg. use."
+    default = 50
+    targets parents
+}
+
+algorithm FrLayouting2(FrLayouting2LayoutProvider) {
+    label "FrLayouting2"
+    description "Please insert a short but informative description here"
+    metadataClass options.FrLayouting2Options
+    supports reverseInput
+    supports org.eclipse.elk.padding = new ElkPadding(10)
+    supports org.eclipse.elk.spacing.edgeEdge = 5
+    supports org.eclipse.elk.spacing.edgeNode = 10
+    supports org.eclipse.elk.spacing.nodeNode = 10
+}
