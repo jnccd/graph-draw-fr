@@ -24,6 +24,11 @@ public class FrLayouting2Options implements ILayoutMetaDataProvider {
   public static final IProperty<Boolean> REVERSE_INPUT = FrLayouting2MetadataProvider.REVERSE_INPUT;
   
   /**
+   * How many iterations should the alg. use.
+   */
+  public static final IProperty<Integer> ITERATIONS = FrLayouting2MetadataProvider.ITERATIONS;
+  
+  /**
    * Default value for {@link #PADDING} with algorithm "FrLayouting2".
    */
   private static final ElkPadding PADDING_DEFAULT = new ElkPadding(10);
@@ -103,6 +108,11 @@ public class FrLayouting2Options implements ILayoutMetaDataProvider {
         "frLayouting2.FrLayouting2",
         "frLayouting2.reverseInput",
         REVERSE_INPUT.getDefault()
+    );
+    registry.addOptionSupport(
+        "frLayouting2.FrLayouting2",
+        "frLayouting2.iterations",
+        ITERATIONS.getDefault()
     );
     registry.addOptionSupport(
         "frLayouting2.FrLayouting2",

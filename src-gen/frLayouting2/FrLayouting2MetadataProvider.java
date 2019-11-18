@@ -26,7 +26,7 @@ public class FrLayouting2MetadataProvider implements ILayoutMetaDataProvider {
   /**
    * Default value for {@link #ITERATIONS}.
    */
-  private static final int ITERATIONS_DEFAULT = 50;
+  private static final int ITERATIONS_DEFAULT = 500;
   
   /**
    * How many iterations should the alg. use.
