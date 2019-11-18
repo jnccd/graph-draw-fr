@@ -21,7 +21,7 @@ option iterations : int {
     label "Iterations"
     description
         "How many iterations should the alg. use."
-    default = 50
+    default = 500
     targets parents
 }
 
@@ -30,6 +30,7 @@ algorithm FrLayouting2(FrLayouting2LayoutProvider) {
     description "Please insert a short but informative description here"
     metadataClass options.FrLayouting2Options
     supports reverseInput
+    supports iterations
     supports org.eclipse.elk.padding = new ElkPadding(10)
     supports org.eclipse.elk.spacing.edgeEdge = 5
     supports org.eclipse.elk.spacing.edgeNode = 10

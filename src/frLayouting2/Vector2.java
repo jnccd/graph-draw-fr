@@ -47,6 +47,10 @@ public class Vector2 {
         return X * X + Y * Y;
     }
     
+    public String toString() {
+        return "{" + X + ", " + Y + "}";
+    }
+    
     public static Vector2 FromELK(ElkShape e) { return new Vector2(e.getX(), e.getY()); }
     public static Vector2 Zero() { return new Vector2(0, 0); }
     public static Vector2 One() { return new Vector2(1, 1); }
